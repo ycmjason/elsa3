@@ -1,0 +1,40 @@
+{
+  "name": "elsa3",
+  "version": "1.0.0",
+  "scripts": {
+    "build:prod": "npm-run-all clean compile:ts uglify:app build:lib",
+    "uglify:app": "uglifyjs dist/app.dev.js -o dist/app.min.js",
+    "build:lib": "cat config/assets.prod.json | json js/lib/source | tr -d '[] ,' | sed '/^$/d' | xargs -I% sh -c 'cat % && echo' | uglifyjs -m -o dist/lib.min.js",
+
+    "build:dev": "npm-run-all clean compile:ts",
+
+    "clean": "rm -r dist/*",
+
+    "tslint": "tslint app/*.ts || true",
+
+    "precompile:ts": "tslint app/*.ts",
+    "compile:ts": "tsc --outFile dist/app.dev.js",
+
+    "compile:ts:w": "npm run compile:ts -- -w",
+
+    "typings": "typings",
+    "postinstall": "typings install"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "angular2": "2.0.0-beta.12",
+    "es6-shim": "^0.35.0",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2",
+    "systemjs": "0.19.24",
+    "zone.js": "0.6.6"
+  },
+  "devDependencies": {
+    "json": "^9.0.3",
+    "npm-run-all": "^1.7.0",
+    "tslint": "^3.6.0",
+    "typescript": "^1.8.9",
+    "typings": "^0.7.9",
+    "uglifyjs": "^2.4.10"
+  }
+}

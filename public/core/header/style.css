@@ -1,0 +1,12 @@
+elsa-core-header .copyright{
+  position:absolute;
+  top:0;
+  right:10;
+}
+elsa-core-header .jumbotron{
+  background-image:url('images/elsa.png');
+  background-color:#C6F2FC;
+  background-size:700px;
+  background-repeat:no-repeat;
+  background-position: right bottom;
+}

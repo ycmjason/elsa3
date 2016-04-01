@@ -1,0 +1,19 @@
+{
+  "favicon": "//d1ujqdpfgkvqfi.cloudfront.net/favicon-generator/htdocs/favicons/2015-02-02/21a870681b99b160c34cd8e1285bd6e3.ico",
+
+  "css": ["bower_components/bootstrap/dist/css/bootstrap.min.css",
+          "public/core/style.css",
+          "public/core/header/style.css"],
+
+  "js": ["dist/app.dev.js"],
+
+  "js/lib": ["node_modules/es6-shim/es6-shim.min.js",
+             "node_modules/systemjs/dist/system-polyfills.js",
+             "node_modules/angular2/es6/dev/src/testing/shims_for_IE.js",
+             "node_modules/angular2/bundles/angular2-polyfills.js",
+             "node_modules/systemjs/dist/system.src.js",
+             "node_modules/rxjs/bundles/Rx.js",
+             "node_modules/angular2/bundles/angular2.dev.js",
+             "bower_components/jquery/dist/jquery.min.js",
+             "bower_components/bootstrap/dist/js/bootstrap.min.js"]
+}
