@@ -17,6 +17,11 @@
 
     "compile:ts:w": "npm run compile:ts -- -w",
 
+    "setENV:prod": "npm run setEnvs \"this.ENV='prod'\"",
+    "setENV:dev": "npm run setEnvs \"this.ENV='dev'\"",
+    "setEnvs": "json --quiet --in-place -f config/envs.json -e",
+    "postsetEnvs": "cat config/envs.json",
+
     "typings": "typings",
     "postinstall": "typings install"
   },
