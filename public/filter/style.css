@@ -1,0 +1,13 @@
+.item{
+  width: 4em;
+  display: inline-block;
+  line-height: 3em;
+  text-align: center;
+}
+.item:hover{
+  cursor: pointer;
+  font-weight: bold;
+}
+.item .active{
+  border-bottom: 5px solid #C6F2FC;
+}

@@ -5,23 +5,16 @@
     "build:prod": "npm-run-all clean compile:ts uglify:app build:lib",
     "uglify:app": "uglifyjs dist/app.dev.js -o dist/app.min.js",
     "build:lib": "cat config/assets.prod.json | json js/lib/source | tr -d '[] ,' | sed '/^$/d' | xargs -I% sh -c 'cat % && echo' | uglifyjs -m -o dist/lib.min.js",
-
     "build:dev": "npm-run-all clean compile:ts",
-
     "clean": "rm -r dist/*",
-
     "tslint": "tslint app/*.ts || true",
-
     "precompile:ts": "tslint app/*.ts",
     "compile:ts": "tsc --outFile dist/app.dev.js",
-
     "compile:ts:w": "npm run compile:ts -- -w",
-
     "setENV:prod": "npm run setEnvs \"this.ENV='prod'\"",
     "setENV:dev": "npm run setEnvs \"this.ENV='dev'\"",
     "setEnvs": "json --quiet --in-place -f config/envs.json -e",
     "postsetEnvs": "cat config/envs.json",
-
     "typings": "typings",
     "postinstall": "typings install"
   },
@@ -29,6 +22,7 @@
   "dependencies": {
     "angular2": "2.0.0-beta.12",
     "es6-shim": "^0.35.0",
+    "filesys-db": "0.2.1",
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.2",
     "systemjs": "0.19.24",

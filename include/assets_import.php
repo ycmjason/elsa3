@@ -10,12 +10,14 @@ function assets_import($type){
       $ret = '<link rel="icon" type="image/x-icon" href="'.$assets[$type].'">';
       break;
     case "css":
+      $ret = '';
       foreach($assets[$type] as $path){
         $ret .= '<link rel="stylesheet" type="text/css" href="'.$path.'">';
       }
       break;
     case "js":
     case "js/lib":
+      $ret = '';
       foreach($assets[$type] as $path){
         $ret .= '<script src="'.$path.'"></script>';
       }

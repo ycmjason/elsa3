@@ -1,12 +1,17 @@
-elsa-core-header .copyright{
+.copyright{
   position:absolute;
   top:0;
   right:10;
 }
-elsa-core-header .jumbotron{
-  background-image:url('images/elsa.png');
+header{
   background-color:#C6F2FC;
+}
+/* will be included in elsa-core-frame
+  background-image:url('images/elsa.png');
   background-size:700px;
   background-repeat:no-repeat;
   background-position: right bottom;
-}
+              <li>
+              <a href="http://vignette3.wikia.nocookie.net/disneyprincess/images/f/f2/ElsaPromo.png/revision/latest?cb=20141127210433">Image Reference</a>
+            </li>
+*/
