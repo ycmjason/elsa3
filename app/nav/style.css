@@ -1,0 +1,10 @@
+li{
+  display: inline-block;
+  list-style-type: none; 
+  width: 4rem;
+  line-height: 3rem;
+}
+
+li:hover{
+  font-weight: bold;
+}

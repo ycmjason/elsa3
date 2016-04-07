@@ -1,5 +1,6 @@
 *.sw*
-node_modules
-typings
-dist
 bower_components
+dist
+node_modules
+npm-debug.log
+typings

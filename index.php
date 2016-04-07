@@ -5,7 +5,8 @@ require_once('./include/assets_import.php');
 ?>
 <html>
   <head>
-    <title>Angular 2 QuickStart</title>
+    <base href="/~cmy14/elsa3/">
+    <title>Elsa3</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?=assets_import('favicon')?>
 

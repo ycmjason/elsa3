@@ -4,7 +4,7 @@ export class Department{
   private classes: Class[]
   constructor(private code: string) { }
   
-  private addClass(cls: Class): boolean{
+  public addClass(cls: Class): boolean{
     // check for class duplication
     if(this.classes.filter(({code: c}) => c==cls.getCode()).length > 0){
       console.error("Attempt to add class with code already exists");
@@ -14,7 +14,7 @@ export class Department{
     return true;
   }
 
-  private getClass(code: string): Class{
+  public getClass(code: string): Class{
     return this.classes.filter(({code: c}) => (c == code))[0];
   }
 }
