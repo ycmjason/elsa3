@@ -8,6 +8,7 @@ import {TimetableComponent} from "../timetable/component";
 // import {FooterComponent} from "./footer.component";
 
 import {DepartmentService} from "../../services/department.service";
+import {ExamService} from "../../services/exam.service";
 
 @Component({
   selector: "elsa-app",
@@ -19,7 +20,8 @@ import {DepartmentService} from "../../services/department.service";
   ],
   providers: [
     ROUTER_PROVIDERS,
-    DepartmentService
+    DepartmentService,
+    ExamService
   ]
 })
 

@@ -5,10 +5,10 @@
     </li>
   </ul>
   <ul *ngIf="selectedDepartment">
-    <li *ngFor="#cls of selectedDepartment.getClasses()">
-      <a [routerLink]="['Timetable', {department: selectedDepartment.getCode(), class: cls.getCode()}]">
-        {{cls.code}}
-      </a>
+    <li *ngFor="#cls of selectedDepartment.getClasses()"
+        [routerLink]="['Timetable', {department: selectedDepartment.getCode(), class: cls.getCode()}]"
+        (click)="selectedDepartment = null">
+      {{cls.code}}
     </li>
   </ul>
 </nav>
