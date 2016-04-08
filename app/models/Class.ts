@@ -2,7 +2,9 @@ import {Exam} from "./Exam";
 
 export class Class{
   private exams: Exam[] 
-  constructor(private code: string) { }
+  constructor(private code: string) {
+    this.exams = [];
+  }
 
   public getCode(): string{
     return this.code;

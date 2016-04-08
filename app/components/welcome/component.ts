@@ -2,8 +2,8 @@ import {Component} from "angular2/core";
 
 @Component({
   selector: "elsa-welcome",
-  templateUrl: "public/welcome/template.html",
-  styleUrls: ["public/welcome/style.css"]
+  templateUrl: "app/components/welcome/template.html",
+  styleUrls: ["app/components/welcome/style.css"]
 })
 
 export class WelcomeComponent { }

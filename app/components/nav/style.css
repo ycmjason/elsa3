@@ -3,8 +3,10 @@ li{
   list-style-type: none; 
   width: 4rem;
   line-height: 3rem;
+  text-align: center;
 }
 
 li:hover{
   font-weight: bold;
+  cursor: pointer;
 }

@@ -2,8 +2,8 @@ import {Component} from "angular2/core";
 
 @Component({
   selector: "elsa-header",
-  templateUrl: "public/header/template.html",
-  styleUrls: ["public/header/style.css"]
+  templateUrl: "app/components/header/template.html",
+  styleUrls: ["app/components/header/style.css"]
 })
 
 export class HeaderComponent {

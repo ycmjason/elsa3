@@ -3,7 +3,9 @@ export class Exam{
   private details: detail[] = [];
   constructor(private code: string,
               private title: string,
-              private datetime: Date) { }
+              private datetime: Date) {
+    this.details = [];
+  }
 
   public getCode(): string{
     return this.code;

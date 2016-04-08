@@ -1,0 +1,14 @@
+<nav>
+  <ul>
+    <li *ngFor="#department of departments" (click)="selectDepartment(department)">
+      {{department.getCode()}}
+    </li>
+  </ul>
+  <ul *ngIf="selectedDepartment">
+    <li *ngFor="#cls of selectedDepartment.getClasses()">
+      <a [routerLink]="['Timetable', {department: selectedDepartment.getCode(), class: cls.getCode()}]">
+        {{cls.code}}
+      </a>
+    </li>
+  </ul>
+</nav>
