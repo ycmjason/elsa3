@@ -1,14 +1,15 @@
 <nav>
-  <ul>
-    <li *ngFor="#department of departments" (click)="selectDepartment(department)">
-      {{department.getCode()}}
-    </li>
-  </ul>
-  <ul *ngIf="selectedDepartment">
-    <li *ngFor="#cls of selectedDepartment.getClasses()"
-        [routerLink]="['Timetable', {department: selectedDepartment.getCode(), class: cls.getCode()}]"
-        (click)="selectedDepartment = null">
-      {{cls.code}}
-    </li>
-  </ul>
+  <div class="container">
+    <ul>
+      <li *ngFor="#department of departments" (click)="selectDepartment(department)">
+        {{department.getCode()}}
+      </li>
+    </ul>
+    <ul *ngIf="selectedDepartment">
+      <li *ngFor="#cls of selectedDepartment.getClasses()"
+          [routerLink]="['Timetable', {department: selectedDepartment.getCode(), class: cls.getCode()}]">
+        {{cls.code}}
+      </li>
+    </ul>
+  </div>
 </nav>

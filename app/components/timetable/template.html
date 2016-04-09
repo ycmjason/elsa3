@@ -1,32 +1,39 @@
-<h3 *ngIf="dep && cls">{{dep.getCode()}}/{{cls.getCode()}}</h3>
-<table *ngIf="exams" class="table table-striped table-hover">
-  <thead>
-    <tr>
-      <th>Code</th>
-      <th>Title</th>
-      <th>Countdown</th>
-      <th>Day</th>
-      <th>Date</th>
-      <th>Time</th>
-      <th *ngFor="#key of getDetailKeys()">{{key}}</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="#exam of exams">
-      <td>{{exam.getCode()}}</td>
-      <td>{{exam.getTitle()}}</td>
-      <td>
-        <span *ngIf="0 < exam.getDatetime().getTime()-currentTime && exam.getDatetime().getTime()-currentTime <= 24*60*60*1000" [ngClass]="{hide: shouldHideCountdown}" class="scaryCountdown">
-          {{showCountdown(exam.getDatetime().getTime()-currentTime)}}
-        </span>
-        <template [ngIf]="exam.getDatetime().getTime()-currentTime <= 0 || exam.getDatetime().getTime()-currentTime > 24*60*60*1000">
-          {{showCountdown(exam.getDatetime().getTime()-currentTime)}}
-        </template>
-      </td>
-      <td>{{getDayName(exam.getDatetime().getDay())}}</td>
-      <td>{{exam.getDate()}}</td>
-      <td>{{exam.getTime()}}</td>
-      <td *ngFor="#key of getDetailKeys()">{{exam.getDetail(key)}}</td>
-    </tr>
-  </tbody>
-</table>
+<h3 *ngIf="dep && cls">
+  <a [routerLink]="['Welcome']">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  {{dep.getTitle()}} / {{cls.getCode()}}
+</h3>
+<div class="scrollable">
+  <table *ngIf="exams" class="table table-striped">
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Title</th>
+        <th>Countdown</th>
+        <th>Day</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th *ngFor="#key of getDetailKeys()">{{key}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="#exam of exams">
+        <td>{{exam.getCode()}}</td>
+        <td>{{exam.getTitle()}}</td>
+        <td>
+          <span *ngIf="0 < exam.getDatetime().getTime()-currentTime && exam.getDatetime().getTime()-currentTime <= 24*60*60*1000" [ngClass]="{hide: shouldHideCountdown}" class="scaryCountdown">
+            {{showCountdown(exam.getDatetime().getTime()-currentTime)}}
+          </span>
+          <template [ngIf]="exam.getDatetime().getTime()-currentTime <= 0 || exam.getDatetime().getTime()-currentTime > 24*60*60*1000">
+            {{showCountdown(exam.getDatetime().getTime()-currentTime)}}
+          </template>
+        </td>
+        <td>{{getDayName(exam.getDatetime().getDay())}}</td>
+        <td>{{exam.getDate()}}</td>
+        <td>{{exam.getTime()}}</td>
+        <td *ngFor="#key of getDetailKeys()">{{exam.getDetail(key)}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

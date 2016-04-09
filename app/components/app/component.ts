@@ -2,6 +2,7 @@ import {Component} from "angular2/core";
 import {Router, RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from "angular2/router";
 
 import {HeaderComponent} from "../header/component";
+import {FrameComponent} from "../frame/component";
 import {WelcomeComponent} from "../welcome/component";
 import {NavComponent} from "../nav/component";
 import {TimetableComponent} from "../timetable/component";
@@ -15,6 +16,7 @@ import {ExamService} from "../../services/exam.service";
   templateUrl: "app/components/app/template.html",
   directives: [
     HeaderComponent,
+    FrameComponent,
     NavComponent,
     ROUTER_DIRECTIVES
   ],

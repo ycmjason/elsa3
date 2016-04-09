@@ -4,7 +4,7 @@
   right:10;
 }
 header{
-  background-color:#C6F2FC;
+  background-color: rgba(198, 242, 252, 0.7);
 }
 /* will be included in elsa-core-frame
   background-image:url('images/elsa.png');

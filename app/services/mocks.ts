@@ -3,9 +3,9 @@ import {Class} from '../models/Class';
 import {Exam} from '../models/Exam';
 
 var mocks: Department[] = [
-  new Department('AE'),
-  new Department('DOC'),
-  new Department('ME')
+  new Department('AE', "Apple eat"),
+  new Department('DOC', "Department of Computing"),
+  new Department('ME', "Mach Egg")
 ];
 
 mocks[0].addClass(new Class('a1'));

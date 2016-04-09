@@ -2,12 +2,16 @@ import {Class} from "./Class";
 
 export class Department{
   private classes: Class[]
-  constructor(private code: string) {
+  constructor(private code: string, private title: string) {
     this.classes = [];
   }
 
   public getCode(): string{
     return this.code;
+  }
+
+  public getTitle(): string{
+    return this.title;
   }
 
   public getClasses(): Class[]{

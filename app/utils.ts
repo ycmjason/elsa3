@@ -7,8 +7,8 @@ export function padZero(x: number, size: number): string {
   return r;
 }
 
-export function getMonthName(m: number): string{
-  var monthNames = ["January",
+export function getMonthName(m: number): string {
+  let monthNames = ["January",
                     "February",
                     "March",
                     "April",
@@ -23,7 +23,7 @@ export function getMonthName(m: number): string{
   return monthNames[m];
 }
 
-export function getDayName(d: number): string{
+export function getDayName(d: number): string {
   // 0 is monday
   let dayNames = ["Sunday",
                   "Monday",

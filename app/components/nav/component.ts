@@ -32,6 +32,7 @@ export class NavComponent implements OnInit {
   }
 
   public selectDepartment(department: Department) {
-    this.selectedDepartment = department;
+    this.selectedDepartment = this.selectedDepartment == department?
+                              null: department;
   }
 }
