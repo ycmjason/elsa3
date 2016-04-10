@@ -1,0 +1,8 @@
+CV|Department of Civil and Environmental Engineering|UG2
+Code|Title|Date|Time|End Time|Lead Examiner
+CI2-240|Fluid Mechanics|Monday 16 May|14:00|17:00|Prof C Swan
+CI2-250|Soils & Engineering Geology|Wednesday 18 May|14:00|17:00|Dr J Standing
+CI2-260|Environmental Engineering|Friday 20 May|14:00|17:00|Dr A Mijic
+CI2-231|Structural Mechanics|Monday 23 May|14:00|17:00|Dr A Phillips
+CI2-220|Mathematics|Wednesday 25 May|14:00|17:00|Dr M Christou
+CI2-222|Statistics|Friday 27 May|14:00|17:00|Dr C Onof

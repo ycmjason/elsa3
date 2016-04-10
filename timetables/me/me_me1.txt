@@ -1,0 +1,9 @@
+ME|Department of Mechanical Engineering|ME1
+Code|Title|Date|Time|End Time
+-|Maths|Monday 16 May|10:00|13:00
+-|Mechatronics|Tuesday 17 May|10:00|11:30
+-|Fluid Mechanics|Thursday 19 May|10:00|11:30
+-|Thermodynamics|Friday 20 May|10:00|11:30
+-|Stress Analysis|Monday 23 May|10:00|11:30
+-|Mechanics|Wednesday 25 May|10:00|11:30
+-|Materials|Friday 27 May|10:00|11:30

@@ -2,8 +2,12 @@ import {Class} from "./Class";
 
 export class Department{
   private classes: Class[]
-  constructor(private code: string, private title: string) {
-    this.classes = [];
+  constructor(private code: string, private title: string, classes?: Class[]) {
+    this.classes = classes || [];
+  }
+
+  private sortClasses() {
+    this.classes = this.classes.sort((c1, c2) => (c1.getCode() < c2.getCode())? -1: 1);
   }
 
   public getCode(): string{
@@ -29,6 +33,7 @@ export class Department{
       return false;
     }
     this.classes.push(cls);
+    this.sortClasses();
     return true;
   }
 

@@ -54,7 +54,9 @@ departments.findOne({code: depCode}, (d) => {
   dep.removeClass(cls.code);
   dep.addClass(cls);
 
-  reinsert({code: depCode}, dep, () => console.log(JSON.stringify(departments)));
+  reinsert({code: depCode}, dep, () => {
+    console.log(JSON.stringify(departments.documents));
+  });
 });
 
 
@@ -74,17 +76,24 @@ function checkValid(lines){
  *     '167' ],
  *   [ 'C130', 'Databases', '29-Apr', '10:00', '80', '219', '128' ]...
  * ] */
-  if(lines[0].length != 3) throw "Error on first line of input file.";
-  if(lines[1].length <  4) throw "Error on second line of input file.";
+  if(lines[0].length != 3){
+    throw "Error on first line of input file.";
+    process.exit(-1);
+  }
+  if(lines[1].length <  4){
+    throw "Error on second line of input file.";
+    process.exit(-1);
+  }
   for(var i = 2; i < lines.length; i++){
     if(lines[i].length != lines[1].length){
-      throw "Error on " + i + "th line of input file.";
+      throw "Error on " + (i+1) + "th line of input file.";
+      process.exit(-1);
     }
   }
 }
 
 function reinsert(query, doc, cb){
-  departments.remove(query, () => {
+  departments.remove(query, (j) => {
     departments.put(doc, cb);
   });
 }

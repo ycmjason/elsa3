@@ -1,0 +1,12 @@
+ME|Department of Mechanical Engineering|ME2
+Code|Title|Date|Time|End Time
+-|Maths|Monday 16 May|14:00|17.00
+-|Mechatronics|Tuesday 17 May|14:00|15:30
+-|Design & Manufacture RESITTERS ONLY|Weds 18 May|14:00|15:30
+-|Fluid Mechanics|Thursday 19 May|14:00|15:30
+-|Thermodynamics|Friday 20 May|14:00|15:30
+-|Stress Analysis|Monday 23 May|14:00|15:30
+-|Heat Transfer|Tuesday 24 May|14:00|15:30
+-|Management and Business for Engineers|Thursday 26 May|14:00|15:30
+-|Dynamics|Friday 27 May|14:00|15:30
+-|Materials|Tuesday 31 May|14:00|15:30

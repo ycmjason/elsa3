@@ -1,0 +1,2 @@
+USAGE of insert_dep bash script:
+./insert_dep doc -> insert all files in ./doc/*

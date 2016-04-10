@@ -32,7 +32,7 @@
         <td>{{getDayName(exam.getDatetime().getDay())}}</td>
         <td>{{exam.getDate()}}</td>
         <td>{{exam.getTime()}}</td>
-        <td *ngFor="#key of getDetailKeys()">{{exam.getDetail(key)}}</td>
+        <td *ngFor="#key of getDetailKeys()" [innerHTML]="nl2br(exam.getDetail(key))"></td>
       </tr>
     </tbody>
   </table>

@@ -1,0 +1,9 @@
+AE|Department of Aeronautics|AE1
+Code|Title|Date|Time|End Time|Examiner(s)
+AE1-111|Thermodynamics|Mon 23 May 2016|14:00|16:30|Prof Denis Doorly
+AE1-107|Mathematics Term II|Tue 24 May 2016|14:00|16:00|Dr Peter Vincent
+AE1-110|Introduction to Structural Analysis|Thu 26 May 2016|14:00|16:00|Prof Paul Robinson\nDr Matthew Santer
+AE1-101|Introduction to Aerodynamics|Fri 27 May 2016|14:00|16:00|Prof Spencer Sherwin\nProf Jonathan Morrison
+AE1-109|Mechanics|Tue 31 May 2016|14:00|16:00|Dr Mathew Santer\nDr Mirko Kovac
+AE1-106|Properties of Materials|Thu 2 June 2016|14:00|17:00|Dr Vito Tagarielli\nDr Qianqian Li
+AE1-102|Aircraft Performance|Fri 3 June 2016|14:00|15:00|Dr Errikos Levis

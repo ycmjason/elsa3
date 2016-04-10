@@ -12,6 +12,10 @@ h3 a:hover{
   text-decoration: none;
 }
 
+td{
+  max-width: 30rem;
+}
+
 .scaryCountdown{
   color: red;
 }

@@ -2,6 +2,10 @@
   <div class="container">
     <ul>
       <li *ngFor="#department of departments" (click)="selectDepartment(department)">
+        <small>
+          <span class="glyphicon glyphicon-menu-up" *ngIf="selectedDepartment==department"></span>
+          <span class="glyphicon glyphicon-menu-down" *ngIf="selectedDepartment!=department"></span>
+        </small>
         {{department.getCode()}}
       </li>
     </ul>

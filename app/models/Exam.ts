@@ -5,8 +5,9 @@ export class Exam{
   private details: detail[] = [];
   constructor(private code: string,
               private title: string,
-              private datetime: Date) {
-    this.details = [];
+              private datetime: Date,
+              details?: detail[]) {
+    this.details = details || [];
   }
 
   public getCode(): string{

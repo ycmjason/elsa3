@@ -1,0 +1,8 @@
+AE|Department of Aeronautics|AE2
+Code|Title|Date|Time|End Time|Examiner(s)
+AE2-216|Technology, Business and the Market for Aeronautical Engineers|Mon 23 May 2016|10:00|12:00|Prof John Sheldrake
+AE2-211|Mechanics of Fligh|Tue 24 May 2016|10:00|12:00|Dr Oli Buxton\nDr Errikos Levis
+AE2-213|Structural Mechanics and Dynamic|Thu 26 May 2016|10:00|13:00|Prof Ferri Aliabadi\nProf Silvestre Pinho\nDr Zahra Sharif Khodaei
+AE2-208|Material|Fri 27 May 2016|10:00|13:00|Dr Emile Greenhalgh\nDr Vito Tagarielli
+AE2-205|Circuits, Signals and System|Tue 31 May 2016|10:00|13:00|Prof George Papadakis\nDr Mirko Kovac\nDr Eric Kerrigan
+AE2-209|Mathematics Term I|Thu 2 June 2016|10:00|12:00|Dr Andy Wynn\nDr Koon-Yang Lee\nDr Kevin Gouder

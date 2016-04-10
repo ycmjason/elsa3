@@ -2,7 +2,6 @@ import {Component, OnInit} from "angular2/core";
 import {RouteParams, ROUTER_DIRECTIVES} from "angular2/router";
 
 import {DepartmentService} from "../../services/department.service";
-import {ExamService} from "../../services/exam.service";
 
 import {padZero, getDayName} from "../../utils";
 
@@ -26,8 +25,7 @@ export class TimetableComponent implements OnInit{
   public shouldHideCountdown = true;
 
   constructor(private _params: RouteParams,
-              private _departmentService: DepartmentService,
-              private _examService: ExamService) { }
+              private _departmentService: DepartmentService) { }
 
   ngOnInit(){
     let depCode = this._params.get('department');
@@ -36,10 +34,7 @@ export class TimetableComponent implements OnInit{
     this._departmentService.getDepartment(depCode).then((dep) => {
       this.dep = dep;
       this.cls = this.dep.getClass(clsCode);
-    });
-
-    this._examService.getExams(depCode, clsCode).then((exams) => {
-      this.exams = exams;
+      this.exams = this.cls.getExams();
     });
 
     // for scary countdown
@@ -92,5 +87,9 @@ export class TimetableComponent implements OnInit{
     }else{
       return getHours24()+":"+getMinutes60()+":"+getSeconds60();
     }
+  }
+
+  public nl2br(s){
+    return s.replace(/\\n/g, "<br>");
   }
 }

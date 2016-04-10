@@ -2,8 +2,12 @@ import {Exam} from "./Exam";
 
 export class Class{
   private exams: Exam[] 
-  constructor(private code: string) {
-    this.exams = [];
+  constructor(private code: string, exams?: Exam[]) {
+    this.exams = exams || [];
+    this.sortExams();
+  }
+  private sortExams(){
+    this.exams = this.exams.sort((e1, e2) => e1.getDatetime().getTime()-e2.getDatetime().getTime());
   }
 
   public getCode(): string{
@@ -25,6 +29,7 @@ export class Class{
       return false;
     }
     this.exams.push(exam);
+    this.sortExams();
     return true;
   }
 }
