@@ -2,6 +2,7 @@
 .htaccess
 bower_components
 dist
+log
 node_modules
 npm-debug.log
 stashpullThenCompile

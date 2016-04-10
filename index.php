@@ -1,5 +1,11 @@
 #!/usr/bin/php
 <?php
+// for logging
+date_default_timezone_set("Europe/London");
+require("../visitorlog.php");
+$logger=new VisitorLogger("log/visitor.log");
+$logger->log();
+
 require_once('./include/env_setup.php');
 require_once('./include/assets_import.php');
 ?>
