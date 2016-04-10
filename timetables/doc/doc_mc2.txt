@@ -1,0 +1,8 @@
+DoC|Department Of Computing|MC2
+Exam|Title|Date|Time|Duration|Room|Size
+C220=MC220|Software Engineering Design|25-Apr|10:00|90|219|158
+C202=MC202| Software Engineering - Algorithms|26-Apr|10:00|90|219|139
+C211=MC211| Operating Systems|28-Apr|10:00|90|219|143
+C223=MC223| Concurrency|3-May|10:00|90|219|146
+C240=MC240| Models of Computation|4-May|10:00|90|219|138
+C231=MC231| Introduction to Artificial Intelligence|6-May|10:00|90|219|161
