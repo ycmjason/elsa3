@@ -1,7 +1,8 @@
 import {Component} from "angular2/core";
-import {Router, RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from "angular2/router";
+import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from "angular2/router";
 
 import {HeaderComponent} from "../header/component";
+import {FooterComponent} from "../footer/component";
 import {FrameComponent} from "../frame/component";
 import {WelcomeComponent} from "../welcome/component";
 import {NavComponent} from "../nav/component";
@@ -17,6 +18,7 @@ import {DepartmentService} from "../../services/department.service";
     HeaderComponent,
     FrameComponent,
     NavComponent,
+    FooterComponent,
     ROUTER_DIRECTIVES
   ],
   providers: [
@@ -40,15 +42,5 @@ import {DepartmentService} from "../../services/department.service";
 ])
 
 export class AppComponent{
-  constructor(private _router: Router) {
-    /* for easier debuggin, coz apache will refer non-recognized links to index.php
-     * so angular 2 should check if path exists */
-    var path = window.location.pathname.replace('/~cmy14/elsa3', '');
-    this._router.recognize(path).then((recognized) => {
-      if(!recognized){
-        console.error('Path not recognised by router: ' + path);
-        document.write("404");
-      }
-    });
-  }
+  constructor() { }
 }
