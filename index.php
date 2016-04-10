@@ -5,7 +5,7 @@ require_once('./include/assets_import.php');
 ?>
 <html>
   <head>
-    <base href="/~cmy14/elsa3/">
+    <base href="/~cmy14/elsa3-dev/">
     <title>Elsa3</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?=assets_import('favicon')?>
