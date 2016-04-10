@@ -2,7 +2,6 @@ import {Component} from "angular2/core";
 import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from "angular2/router";
 
 import {HeaderComponent} from "../header/component";
-import {FooterComponent} from "../footer/component";
 import {FrameComponent} from "../frame/component";
 import {WelcomeComponent} from "../welcome/component";
 import {NavComponent} from "../nav/component";
@@ -18,7 +17,6 @@ import {DepartmentService} from "../../services/department.service";
     HeaderComponent,
     FrameComponent,
     NavComponent,
-    FooterComponent,
     ROUTER_DIRECTIVES
   ],
   providers: [
