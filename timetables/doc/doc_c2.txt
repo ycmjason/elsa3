@@ -10,3 +10,4 @@ C231=MC231| Introduction to Artificial Intelligence|6-May|10:00|90|219|161
 C210|Computer Architecture|9-May|14:00|90|341/2|44
 C212|Networks and Communications|10-May|10:00|90|219|125
 C233|Computational Techniques|12-May|10:00|90|219|98
+C221=MC221|Compilers|16-May|10:00|90|219|158
