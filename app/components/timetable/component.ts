@@ -82,7 +82,7 @@ export class TimetableComponent implements OnInit{
 
     if(time <= 0){
       return "Let it go!";
-    }else if(getDays() > 1){
+    }else if(getDays() >= 1){
       return getDays()+" days "+ getHours24()+ " hrs";
     }else{
       return getHours24()+":"+getMinutes60()+":"+getSeconds60();
