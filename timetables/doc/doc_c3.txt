@@ -1,0 +1,11 @@
+DoC|Department Of Computing|C3
+Exam|Title|Date|Time|Duration|Room
+C303|Systems Verification|20-Mar|10:00|120|341/2
+C304|Logic-Based Learning|20-Mar|14:00|120|219
+C318|Custom Computing|20-Mar|14:00|120|219
+C395|Machine Learning|21-Mar|10:00|90|219
+C338|Pervasive Computing|21-Mar|10:00|90|308
+C347|Distributed Algorithms|22-Mar|14:00|120|219
+C331|Network and Web Security|23-Mar|10:00|180|219
+C317|Graphics|24-Mar|10:00|120|219
+C332|Advanced Computer Architecture|24-Mar|14:00|120|341/2

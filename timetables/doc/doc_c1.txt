@@ -1,9 +1,9 @@
 DoC|Department Of Computing|C1
-Exam|Title|Date|Time|Duration|Room|Size
-C113=MC113|Architecture|27-Apr|10:00|80|219|167
-C130|Databases|29-Apr|10:00|80|219|128
-C140=MC140|Logic|3-May|14:00|80|219|167
-C141=MC141|Reasoning about Programs|5-May|10:00|80|219|167
-C112|Hardware|9-May|10:00|80|219|128
-C145|Mathematical Methods|11-May|10:00|80|219|128
-C142|Discrete Mathematics|13-May|10:00|80|219|128
+Exam|Title|Date|Time|Duration|Room
+C130|Databases|4-May|10:00|80|219
+C113|Architecture|5-May|14:00|80|219
+C140|Logic|8-May|14:00|80|219
+C112|Hardware|10-May|10:00|80|219
+C141|Reasoning About Programs|12-May|14:00|80|219
+C142|Discrete Mathematics|16-May|10:00|80|219
+C145|Mathematical Methods|18-May|10:00|80|219

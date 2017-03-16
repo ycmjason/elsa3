@@ -1,0 +1,14 @@
+DoC|Department Of Computing|C4
+Exam|Title|Date|Time|Duration|Room
+C433|Advanced Robotics|20-Mar|10:00|120|219
+C444H|Advanced Compilers|20-Mar|14:00|70|341/2
+C412H|Large Scale Data Management|21-Mar|10:00|70|341/2
+C410H|Scalable Distributed Systems Design|21-Mar|11:40|70|341/2
+C417|Advanced Computer Graphics|22-Mar|10:00|120|219
+C415H|Body Sensor Networks in the Internet of Things|22-Mar|10:00|70|341/2
+C436H|Performance Engineering|22-Mar|11:40|70|341/2
+C495|Advanced Statistical Machine Learning and Pattern Recognition|22-Mar|14:00|120|341/2
+C474|Argumentation and Multi-agent Systems|23-Mar|10:00|120|202
+C422|Computational Finance|23-Mar|10:00|120|341/2+217/8
+C409|Cryptography Engineering|24-Mar|10:00|120|341/2+219
+C493|Data Analysis and Probabilistic Inference|24-Mar|14:00|120|219

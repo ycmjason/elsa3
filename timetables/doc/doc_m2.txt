@@ -1,4 +1,4 @@
 DoC|Department Of Computing|M2
-Exam|Title|Date|Time|Duration|Room|Size
-M2SJ|Statistical Methods|29-Apr|14:00|120|219|34
-M2|Computer Systems|29-Apr|14:00|120|341/2|81
+Exam|Title|Date|Time|Duration|Room
+M2|Computer Systems|2-May|10:00|120|341/2
+M2SJ|Statistical Methods|8-May|10:00|120|219

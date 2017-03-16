@@ -1,5 +1,6 @@
 DoC|Department Of Computing|C5
-Exam|Title|Date|Time|Duration|Room|Size
-C527|Computer Networks and Distributed Systems|25-Apr|10:00|120|341/2|78
-C526|Databases|27-Apr|10:00|120|341/2|94
-C580|Algorithms|5-May|10:00|120|341/2|60
+Exam|Title|Date|Time|Duration|Room
+C528|Concurrency: Models and Programming|20-Mar|10:00|120|219
+C526|Databases|4-May|10:00|120|341/2+308
+C580|Algorithms|5-May|10:00|120|341/2
+C527|Computer Networks and Distributed Systems|8-May|10:00|120|341/2

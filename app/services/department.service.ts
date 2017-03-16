@@ -25,7 +25,7 @@ export class DepartmentService {
 
   private fetchCache(): Promise<Department[]>{
     return new Promise<Department[]>((resolve) => {
-      this.http.get('api.php?q=getDepartments')
+      this.http.get('node_modules/filesys-db/filesys-db/departments.json')
                .map(deps => deps.json())
                .subscribe(
                  deps => {

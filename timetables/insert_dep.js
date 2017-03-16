@@ -12,6 +12,8 @@
 
 if(process.argv.length < 3) throw "Provided arg not enough.";
 
+var CURRENT_YEAR = 2017;
+
 var fs = require('fs');
 
 var db = require('filesys-db')();
@@ -36,7 +38,7 @@ departments.findOne({code: depCode}, (d) => {
   var exams = [];
   for(var i = 2; i < lines.length; i++){
     var datetime = new Date(lines[i][2]+' '+lines[i][3]);
-    datetime.setYear(2016)
+    datetime.setYear(CURRENT_YEAR)
     var exam = new Exam(lines[i][0], lines[i][1], datetime)
     for (var j = 4; j < detailKeys.length; j++) {
       exam.addDetail(detailKeys[j], lines[i][j]);
@@ -55,7 +57,8 @@ departments.findOne({code: depCode}, (d) => {
   dep.addClass(cls);
 
   reinsert({code: depCode}, dep, () => {
-    console.log(JSON.stringify(departments.documents));
+    console.log(`Inserted ${depCode} ${clsCode}.`);
+//    console.log(JSON.stringify(departments.documents));
   });
 });
 
@@ -77,16 +80,16 @@ function checkValid(lines){
  *   [ 'C130', 'Databases', '29-Apr', '10:00', '80', '219', '128' ]...
  * ] */
   if(lines[0].length != 3){
-    throw "Error on first line of input file.";
+    throw "Error on first line of input file " + filePath + ".";
     process.exit(-1);
   }
   if(lines[1].length <  4){
-    throw "Error on second line of input file.";
+    throw "Error on second line of input file " + filePath + ".";
     process.exit(-1);
   }
   for(var i = 2; i < lines.length; i++){
     if(lines[i].length != lines[1].length){
-      throw "Error on " + (i+1) + "th line of input file.";
+      throw "Error on " + (i+1) + "th line of input file " + filePath + ".";
       process.exit(-1);
     }
   }

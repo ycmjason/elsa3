@@ -1,0 +1,5 @@
+DoC|Department Of Computing|MC1
+Exam|Title|Date|Time|Duration|Room|Size
+C113=MC113|Architecture|27-Apr|10:00|80|219|167
+C140=MC140|Logic|3-May|14:00|80|219|167
+C141=MC141|Reasoning about Programs|5-May|10:00|80|219|167

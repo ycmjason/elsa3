@@ -1,13 +1,13 @@
 DoC|Department Of Computing|C2
-Exam|Title|Date|Time|Duration|Room|Size
-C220=MC220|Software Engineering Design|25-Apr|10:00|90|219|158
-C202=MC202| Software Engineering - Algorithms|26-Apr|10:00|90|219|139
-C211=MC211| Operating Systems|28-Apr|10:00|90|219|143
-C245| Statistics|29-Apr|14:00|120|219|124
-C223=MC223| Concurrency|3-May|10:00|90|219|146
-C240=MC240| Models of Computation|4-May|10:00|90|219|138
-C231=MC231| Introduction to Artificial Intelligence|6-May|10:00|90|219|161
-C210|Computer Architecture|9-May|14:00|90|341/2|44
-C212|Networks and Communications|10-May|10:00|90|219|125
-C233|Computational Techniques|12-May|10:00|90|219|98
-C221=MC221|Compilers|16-May|10:00|90|219|158
+Exam|Title|Date|Time|Duration|Room
+C202=MC202|Software Engineering - Algorithms|2-May|10:00|90|219
+C220=MC220|Software Engineering Design|3-May|10:00|90|219
+C223=MC223|Concurrency|5-May|10:00|90|219
+C245|Probability and Statistics|8-May|10:00|120|219
+C231=MC231|Introduction to Artificial Intelligence|9-May|10:00|90|219
+C240=MC240|Models of Computation|11-May|10:00|90|219
+C211=MC211|Operating Systems|12-May|10:00|90|219
+C212|Networks and Communications|15-May|10:00|90|219
+C233|Computational Techniques|17-May|10:00|90|219
+C210|Computer Architecture|18-May|14:00|90|341/2
+C221=MC221|Compilers|19-May|10:00|90|219
