@@ -6,4 +6,9 @@ import {Component} from "angular2/core";
   styleUrls: ["app/components/frame/style.css"]
 })
 
-export class FrameComponent { }
+export class FrameComponent { 
+  private showing = true;
+  public showhide(){
+    this.showing = !this.showing;
+  }
+}
