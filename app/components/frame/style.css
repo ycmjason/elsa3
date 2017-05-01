@@ -5,13 +5,13 @@ div{
   top: 0;
   left: 0;
   min-height: 587px;
+  z-index:-1;
 }
 div.elsa{
   background-image:url('public/images/elsa.png');
   background-size:700px;
   background-repeat:no-repeat;
   background-position: 110% 100%;
-  z-index:-1;
 }
 /*              <li>
               <a href="http://vignette3.wikia.nocookie.net/disneyprincess/images/f/f2/ElsaPromo.png/revision/latest?cb=20141127210433">Image Reference</a>
