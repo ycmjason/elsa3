@@ -1,10 +1,12 @@
 div{
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 100%;
-  min-height: 587px;
   top: 0;
   left: 0;
+  min-height: 587px;
+}
+div.elsa{
   background-image:url('public/images/elsa.png');
   background-size:700px;
   background-repeat:no-repeat;
@@ -14,3 +16,9 @@ div{
 /*              <li>
               <a href="http://vignette3.wikia.nocookie.net/disneyprincess/images/f/f2/ElsaPromo.png/revision/latest?cb=20141127210433">Image Reference</a>
             </li>*/
+
+button.showhide{
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
